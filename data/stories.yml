@@ -1,0 +1,205 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: start
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: start
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: start
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  
+- story: ask aiml
+  steps:
+  - intent: ai/ml
+  - action: utter_aiml
+  
+- story: ask python
+  steps:
+  - intent: python
+  - action: utter_python
+
+- story: ask Robotic Process
+  steps:
+  - intent: rpa
+  - action: utter_rpa
+  
+- story: ask business consult
+  steps:
+  - intent: businessconsult
+  - action: utter_businessconsult
+  
+- story: ask business intelligence
+  steps:
+  - intent: businessintelligence
+  - action: utter_businessintelligence
+  
+- story: ask hire resource
+  steps:
+  - intent: hireresource
+  - action: utter_hireresource
+
+- story: ask pwa
+  steps:
+  - intent: pwa
+  - action: utter_pwa
+  
+- story: ask connect
+  steps:
+  - intent: connect
+  - action: utter_connect
+
+- story: ask homepage
+  steps:
+  - intent: homepage
+  - action: utter_homepage
+  
+ 
+- story: ask contact
+  steps:
+  - intent: contact
+  - action: utter_contact
+
+- story: ask team
+  steps:
+  - intent: team
+  - action: utter_team
+
+- story: ask django
+  steps:
+  - intent: django
+  - action: utter_django
+
+- story: ask getstarted
+  steps:
+  - intent: getstarted
+  - action: utter_getstarted
+
+
+- story: ask golang
+  steps:
+  - intent: golang
+  - action: utter_golang
+
+- story: ask name
+  steps:
+  - intent: inquiryform
+  - entities:
+    - name
+  - slot_was_set:
+    - name
+  - action: utter_name
+
+- story: ask email
+  steps:
+  - intent: name
+  - entities:
+    - email
+  - slot_was_set:
+    - email
+  - action: utter_email
+
+- story: ask number
+  steps:
+  - intent: email
+  - entities:
+    - number
+  - slot_was_set:
+    - number
+  - action: utter_number
+
+- story: ask description
+  steps:
+  - intent: number
+  - entities:
+    - description
+  - slot_was_set:
+    - description
+  - action: utter_description
+
+- story: ask thanks
+  steps:
+  - intent: description
+  - action: utter_thanks
+  - action: action_save_candidate
+
+
+- story: ask flutter
+  steps:
+  - intent: flutter
+  - action: utter_flutter
+
+- story: ask reactjs
+  steps:
+  - intent: reactjs
+  - action: utter_reactjs
+
+- story: ask location
+  steps:
+  - intent: location
+  - action: utter_location
+
+- story: ask australialocation
+  steps:
+  - intent: australialocation
+  - action: utter_australia_location
+
+- story: ask norwaylocation
+  steps:
+  - intent: norwaylocation
+  - action: utter_norway_location
+
+- story: ask canadalocation
+  steps:
+  - intent: canadalocation
+  - action: utter_canada_location
+
+- story: ask linkedin
+  steps:
+  - intent: linkedin
+  - action: utter_linkedin
+
+- story: ask instagram
+  steps:
+  - intent: instagram
+  - action: utter_instagram
+
+- story: ask facebook
+  steps:
+  - intent: facebook
+  - action: utter_facebook
+
+- story: ask twitter
+  steps:
+  - intent: twitter
+  - action: utter_twitter
+
+- story: ask blog
+  steps:
+  - intent: blog
+  - action: utter_blog
+
+- story: ask officehours
+  steps:
+  - intent: officehours
+  - action: utter_officehours

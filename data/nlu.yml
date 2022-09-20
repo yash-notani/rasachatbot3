@@ -1,0 +1,438 @@
+version: "3.1"
+
+nlu:
+- intent: start
+  examples: |
+    - hey
+    - hello
+    - hi
+
+- intent: goodbye
+  examples: |
+    -I want to hire developer
+    -I want a web application
+    -I want to build website
+    -I want a webapp
+    -I want to know about services
+    -Back
+    -Back To Menu
+    -i would like to know more about services
+    -which services do you provide
+    -services
+    -Technologies
+    -All services
+    -i need a developer
+    -need a developer
+
+- intent: inquiryform
+  examples: |
+    -I want to fill inquiry form
+    -inquiry form
+    -Can we connect
+    -Provide us your details we will get back to you
+    -Let's connect
+
+- intent: number
+  examples: |
+    - [897654321](number)
+    - [123456789](number)
+    - [785643218](number)
+    - [231654987](number)
+    - [564987321](number)
+    - [321654987](number)
+    - [987654321](number)
+
+- intent: name
+  examples: |
+    - [divyesh patel](name)
+    - [vijay pawar](name)
+    - [abrar shaikh](name)
+    - [dux prajapati](name)
+    - [aman pandey](name)
+    - [namam gajjar](name)
+    - [harsh patel](name)
+    - [yash notani](name)
+    - [milan vadhiya](name)
+    - [pankaj vardhe](name)
+    - [vaibhav purohit](name)
+    - [shinoj nair](name)
+    - [heena nair](name)
+    - [shubham mankodiya](name)
+    - [manish shaw](name)
+    - [mohita gandhi](name)
+    - [moksha bhavsar](name)
+    - [kevin vacchani](name)
+    - [palak doshi](name)
+    - [amarendra patel](name)
+    - [vidhi suthar](name)
+    - [rashmiranjan sahu](name)
+    - [vikas patel](name)
+    - [neeraj sorathiya](name)
+    - [parth tikolani](name)
+    - My name is [kalkivi khunt](name)
+    - My name is [shubham mankodiya](name)
+    - My name is [abrar shaikh](name)
+    - My name is [aman pandey](name)
+    - I am [namam gajjar](name)
+    - I am [harsh patel](name)
+    - I am [yash notani](name)
+
+
+- intent: email
+  examples: |
+    - [prateeksoni300@gmail.com](email)
+    - [prateek.soni1@ibm.com](email)
+    - [jasmeet@outlook.com](email)
+    - [john@hotmail.com](email)
+    - [prateeksoni300@tecblic.com](email)
+    - [prateek.soni1@tecblic.com](email)
+    - [jasmeet@gmail.com](email)
+    - [john@hotmail.com](email)
+    - Hi, The email is [prateeksoni300@gmail.com](email)
+    - Hi, The email is [prateek.soni1@ibm.com](email)
+    - Hi, The email is [jasmeet@outlook.com](email)
+    - Hi, The email is [john@hotmail.com](email)
+    - The email is [prateeksoni300@gmail.com](email)
+    - The email is [prateek.soni1@ibm.com](email)
+    - The email is [jasmeet@outlook.com](email)
+    - The email is [john@hotmail.com](email)
+    - You can contact them at [prateeksoni300@gmail.com](email)
+    - You can contact them at [prateek.soni1@ibm.com](email)
+    - You can contact them at [jasmeet@outlook.com](email)
+    - You can contact them at [john@hotmail.com](email)
+    - [prateek@gmail.com](email)
+    - [prateek@gmail.com](email)
+    - the email is [prateek@gmail.com](email)
+
+- intent: description
+  examples: |
+    - [i have a project of object detection](description)
+    - [i have a project of classification](description)
+    - [i want developers of django](description)
+    - [i have a project of deep learning](description)
+    - [i have a project](description)
+    - [i need developers for my project](description)
+    - [i have a project of odoo](description)
+    - [i have a project of natural language processing](description)
+    - [i want developers of erp next](description)
+    - [i have a project of machine learning](description)
+
+
+- intent: affirm
+  examples: |
+    - Can you brief me about odoo?
+    - odoo
+    - CRM
+    - e-commerce
+    - sales
+    - project management
+    - manufacturing
+    - inventory management
+    - accounting
+    - HR management
+    - marketing activities
+    - customer support tools
+    - business applications
+    - erp
+    - erp next
+
+
+- intent: ai/ml
+  examples: |
+    - Can you brief me about AI/ML?
+    - AI/ML
+    - i want to build in ai
+    - i want to build in ml
+    - ai
+    - ml
+    - prediction
+    - artificial intelligence
+    - machine learning
+    - nlp
+    - natural language processing
+    - object detection
+    - classification
+    
+- intent: python
+  examples: |
+    - Can you brief me about Python?
+    - Python
+    - i want to build in python
+
+
+- intent: rpa
+  examples: |
+    - Can you brief me about Robotic Process?
+    - Robotic Process
+    - software robots
+    - rpa
+    - robotic process automation
+    - automation
+
+- intent: django
+  examples: |
+    - Can you brief me about Django?
+    - jango
+    - django
+    - pythondjango
+    - i want tobuild in django
+
+- intent: golang
+  examples: |
+    - Can you brief me about Golang?
+    - golang
+    - go language
+    - i want to build in golang
+
+- intent: flutter
+  examples: |
+    - Can you brief me about Flutter?
+    - i want to build in flutter
+    - Flutter
+    - ios
+    - android
+    - mobile
+    - mobileapp
+    - mobile application
+    - tablet
+    - iphone
+    - game application
+
+- intent: reactjs
+  examples: |
+    - Can you brief me about ReactJs?
+    - i want to build in reactjs
+    - reactjs
+    - js
+    - javascript
+    - frontend
+
+
+- intent: businessconsult
+  examples: |
+    - Can you brief me about Business Consulting?
+    - Business Consulting
+    - Business Strategy
+    - Management Consulting
+    - Business Development
+    - Consulting
+    - Strategic Planning
+    - Strategy
+    - Change Management
+    - Management
+    - Business Process Improvement
+    - Project Management
+    - Business Planning
+    
+- intent: businessintelligence
+  examples: |
+    - Can you brief me about Business Intelligence?
+    - i want to build in business intelligence
+    - Business Intelligence
+    - bi
+    - powerbi
+    - Data Warehousing
+    - Data Analysis
+    - Data Modeling
+    - Data Visualization
+    - Business Intelligence Tools
+    - data
+
+- intent: hireresource
+  examples: |
+    - Can you brief me about hire resources?
+    - i want to hire resource
+    - Hire Dedicated Resources
+    - hire developers
+
+- intent: pwa
+  examples: |
+    - Can you brief me about PWA Development?
+    - i want to build in pwa
+    - PWA Development
+    - Progressive Web App
+    - pwa
+
+- intent: team
+  examples: |
+    - How many employees are there in company?
+    - strength
+    - employees
+    - team
+    - how many developers do you have in team
+    - developers
+
+- intent: location
+  examples: |
+    - Where are you located?
+    - location
+    - headquaters
+    - where is company?
+    - where is office loacted?
+    - address
+
+- intent: australialocation
+  examples: |
+    - Do you have any branch in australia?
+    - Australia
+    - australia branch address
+    - australia
+    - australia address
+
+- intent: norwaylocation
+  examples: |
+    - Do you have any branch in norway?
+    - norway
+    - norway branch address
+    - norway
+    - norway address
+
+- intent: canadalocation
+  examples: |
+    - Do you have any branch in canada?
+    - canada
+    - canada branch address
+    - canada
+    - canada address
+
+
+- intent: officehours
+  examples: |
+    - What are the working hours?
+    - office hours
+    - working hours
+    - working days
+    - working
+    - open hours
+    - when do you work
+    - what are the working days
+    - are you open today
+    - are you open
+
+
+- intent: connect
+  examples: |
+    - Name, EmailID, Number
+
+- intent: linkedin
+  examples: |
+    - Can I have your linkedin profile?
+    - linkedin
+    - can you provide me linkedin profile?
+    - do you have linkedin profile
+    - linkedin profile
+    - what is your linkedin profile link
+    - can you please provide me linkedin profile link?
+
+- intent: instagram
+  examples: |
+    - Can I have your instagram profile?
+    - instagram
+    - can you provide me instagram profile?
+    - do you have instagram profile
+    - instagram profile
+    - what is your instagram profile link
+    - can you please provide me instagram profile link?
+
+- intent: facebook
+  examples: |
+    - Can I have your facebook profile?
+    - facebook
+    - can you provide me facebook profile?
+    - do you have facebook profile
+    - facebook profile
+    - what is your facebook profile link
+    - can you please provide me facebook profile link?
+
+- intent: twitter
+  examples: |
+    - Can I have your twitter profile?
+    - twitter
+    - can you provide me twitter profile?
+    - do you have twitter profile
+    - twitter profile
+    - what is your twitter profile link
+    - can you please provide me twitter profile link?
+
+- intent: homepage
+  examples: |
+    - HomePage
+
+- intent: blog
+  examples: |
+    - blog
+    - can you provide me blog link
+    - is there any blog on the website?
+    - blog link
+    - blog's link
+
+
+- intent: contact
+  examples: |
+    - Contact Us
+    - contactus
+    - contact
+    - contact us
+    - number
+    - contact number
+    - contact email
+    - email
+    - emailid
+    - email id
+    - call
+
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: getstarted
+  examples: |
+    - getstarted
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
